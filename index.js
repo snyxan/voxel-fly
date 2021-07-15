@@ -64,7 +64,7 @@ Fly.prototype.startFlying = function() {
   var physical = this.physical
   physical.removeForce(game.gravity)
   physical.onGameTick = function(dt) {
-    if (physical.atRestY() === -1) return self.stopFlying()
+    // if (physical.atRestY() === -1) return self.stopFlying()
     physical.friction.x = self.flySpeed
     physical.friction.z = self.flySpeed
     var press = game.controls.state
